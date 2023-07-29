@@ -5,14 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#A4A6A5",
-        secondary: "#262626",
-        accent: "#727372",
-        font: {
-          white: "#F2F2F2",
-          black: "#0D0D0D",
-        },
+        primary: "#202142",
       },
+    },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
     },
   },
   plugins: [],

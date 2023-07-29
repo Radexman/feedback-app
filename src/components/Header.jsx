@@ -1,8 +1,8 @@
 function Header({ text }) {
   return (
     <header>
-      <div className="container">
-        <h2>{text}</h2>
+      <div className="container text-center">
+        <h1 className="font-semibold">{text}</h1>
       </div>
     </header>
   );
