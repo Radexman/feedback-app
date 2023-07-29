@@ -2,7 +2,7 @@ function Header({ text }) {
   return (
     <header>
       <div className="container text-center">
-        <h1 className="font-semibold">{text}</h1>
+        <h1 className="font-semibold text-[#ff6a95]">{text}</h1>
       </div>
     </header>
   );
