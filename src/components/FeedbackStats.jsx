@@ -9,11 +9,11 @@ function FeedbackStats({ feedback }) {
 
   return (
     <div className="feedback-stats">
-      <h4 className="font-semibold">{feedback.length} Reviews</h4>
-      <h4 className="font-semibold">
+      <h2 className="font-semibold">{feedback.length} Reviews</h2>
+      <h2 className="font-semibold">
         Average Rating:
         {feedback.length === 0 ? 0 : average}
-      </h4>
+      </h2>
     </div>
   );
 }
