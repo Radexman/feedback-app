@@ -1,15 +1,8 @@
-import { FaTimes } from "react-icons/fa";
-import Card from "./shared/Card";
-
-function FeedbackItem({ item, handleDelete }) {
+export default function FeedbackItem({ item }) {
   return (
-    <Card>
+    <div className="card">
       <div className="num-display">{item.rating}</div>
-      <button className="close">
-        <FaTimes onClick={() => handleDelete(item.id)} color="white" />
-      </button>
-      <div className="text-dispaly">{item.text}</div>
-    </Card>
+      <div className="text-display">{item.text}</div>
+    </div>
   );
 }
-export default FeedbackItem;

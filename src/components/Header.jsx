@@ -1,15 +1,28 @@
-function Header({ text }) {
+import PropTypes from "prop-types";
+
+export default function Header({ text, bgColor, textColor }) {
+  const headerStyles = {
+    backgroundColor: bgColor,
+    color: textColor,
+  };
+
   return (
-    <header>
-      <div className="container text-center">
-        <h1 className="font-semibold text-[#ff6a95]">{text}</h1>
+    <header style={headerStyles}>
+      <div className="container">
+        <h2 className="text-center">{text}</h2>
       </div>
     </header>
   );
 }
 
 Header.defaultProps = {
-  text: "Feedback App",
+  text: "Feedback UI",
+  bgColor: "rgba(0, 0, 0, 0.4)",
+  textColor: "#ff6a95",
 };
 
-export default Header;
+Header.propTypes = {
+  text: PropTypes.string,
+  bgColor: PropTypes.string,
+  textColor: PropTypes.string,
+};
