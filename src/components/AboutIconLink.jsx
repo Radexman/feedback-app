@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import { FaQuestion } from "react-icons/fa";
 
-export default function AboutIcinLink() {
+export default function AboutIconLink() {
   return (
     <div className="about-link">
-      <FaQuestion size={45} color="white" />
+      <Link to="/about">
+        <FaQuestion size={30} />
+      </Link>
     </div>
   );
 }
