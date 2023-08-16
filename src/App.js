@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header";
+import Post from "./components/Post";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackData from "./data/FeedbackData";
 import FeedbackStats from "./components/FeedbackStats";
@@ -44,9 +45,12 @@ export default function App() {
           ></Route>
 
           <Route path="/about" element={<AboutPage />} />
+
+          <Route path="/post/:id/:name" element={<Post />} />
         </Routes>
+
+        <AboutIconLink />
       </div>
-      <AboutIconLink />
     </Router>
   );
 }
